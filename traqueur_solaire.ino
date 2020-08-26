@@ -83,13 +83,13 @@ void loop() {
   
   if((intensite_haut > intensite_bas) & (diff_lac > tolerance_lac)){
     if(lacet_act > lacet_min);
-      lacet_act -= 1         ;                            // Modification de 1 degré (ajustable)
+      lacet_act -= 1         ;                               // Modification de 1 degré (ajustable)
     }
     
   if((intensite_haut < intensite_bas) & (diff_lac > tolerance_lac)){
     
     if(lacet_act < lacet_max);
-      lacet_act += 1;                            // Modification de 1 degré (ajustable)
+      lacet_act += 1;                                        // Modification de 1 degré (ajustable)
     }
   lacet.write(lacet_act);
   delay(10);
